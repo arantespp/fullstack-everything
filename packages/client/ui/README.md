@@ -8,7 +8,7 @@
 
 ### Using Storybook Stories
 
-This project is using Storybook stories to be used as the arranged component (first "A" of [AAA](https://medium.com/@pjbgf/title-testing-code-ocd-and-the-aaa-pattern-df453975ab80)). The library [@storybook/testing-react](https://github.com/storybookjs/testing-react#readme) provides methods to import components stories so that you write once and use twice. For example, the [Post spec](src/components/Post/Post.spec.tsx) file is:
+This project is using [Storybook stories](https://storybook.js.org/docs/react/writing-stories/introduction) to be used as the arranged component (first "A" of [AAA](https://medium.com/@pjbgf/title-testing-code-ocd-and-the-aaa-pattern-df453975ab80)). The library [@storybook/testing-react](https://github.com/storybookjs/testing-react#readme) provides methods to import components stories so that you write once and use twice. For example, the [Post.spec.tsx](src/components/Post/Post.spec.tsx) file imported stories from [Post.stories.tsx](src/components/Post/Post.stories.tsx) and assert using the [story args](https://storybook.js.org/docs/react/writing-stories/args):
 
 ```tsx
 import * as React from 'react';

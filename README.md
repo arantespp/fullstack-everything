@@ -1,23 +1,5 @@
-# ttoss Monorepo Template
+# Fullstack Everything
 
-Monorepo template used by [Triãngulos Tecnologia](https://triangulostecnologia.com) and ttoss projects.
+## UI
 
-## Features
-
-- Eslint
-- Commitlint
-- Husky
-- Jest
-- Lint Staged
-- NPM Check Updates
-- Prettier
-- Stylelint
-- TypeScript
-
-## Init Husky
-
-```
-npx husky-init && yarn
-```
-
-[Reference.](https://typicode.github.io/husky/#/?id=automatic-recommended)
+This package contains all project React components used by the applications. More detailed information can be seen [here](packages/client/ui/README.md).
