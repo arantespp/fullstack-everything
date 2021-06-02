@@ -1,8 +1,8 @@
 {
-  "name": "ttoss-monorepo-template",
+  "name": "fullstack-everything",
   "private": true,
   "version": "0.0.1",
-  "description": "ttoss monorepo template.",
+  "description": "A fullstack project.",
   "scripts": {
     "test": "lerna run test",
     "version": "lerna version",
@@ -22,11 +22,14 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
+    "@storybook/testing-react": "^0.0.16",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
     "eslint": "^7.27.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.7.2",
@@ -54,5 +57,10 @@
   },
   "workspaces": [
     "packages/**/*"
-  ]
+  ],
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "theme-ui": "^0.9.1"
+  }
 }

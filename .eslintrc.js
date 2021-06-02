@@ -1,18 +1,11 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    // Too slow when using project
-    // "project": "./tsconfig.base.json"
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
   env: {
     browser: true,
     'jest/globals': true,
   },
   plugins: ['@typescript-eslint', 'jest', 'prettier'],
   extends: [
-    'airbnb-base',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
     'plugin:prettier/recommended',
